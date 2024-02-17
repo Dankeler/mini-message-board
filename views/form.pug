@@ -1,0 +1,12 @@
+doctype html
+html
+  body
+    block content
+      form(method="POST" action="/new")
+        p 
+          label(for="user") Name: 
+          input(id="user" type="text" value="" name="user")
+        p
+          label(for="message") Message: 
+          input(id="message" type="text" value="" name="message")
+        button(type="submit") Submit
